@@ -2,18 +2,18 @@
   "compilerOptions": {
     "target": "es5",
     "lib": [
-      "es2019",
+      "esnext",
       "dom",
       "dom.iterable"
     ],
-    "baseUrl": "./",
+    "allowJs": true,
+    "skipLibCheck": true,
     "module": "esnext",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "jsx": "react",
-    "incremental": true,
-    "outDir": "./.ts-cache/",
-    "strictNullChecks": true
+    "strict": true,
+    "baseUrl": "./",
   },
   "include": [
     "./src/**/*"
