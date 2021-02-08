@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    // Target latest browsers
     "target": "es5",
     "lib": [
       "es2019",
@@ -8,18 +7,12 @@
       "dom.iterable"
     ],
     "baseUrl": "./",
-    // Required: Use module="ESNext" so that TS won't compile/disallow any ESM syntax.
     "module": "esnext",
-    // Required for some packages.
     "moduleResolution": "node",
-    // `import React` instead of `import * as React`
     "allowSyntheticDefaultImports": true,
-    // <div /> => React.createElement("div")
     "jsx": "react",
-    // Only for type checks.
     "incremental": true,
     "outDir": "./.ts-cache/",
-    // Useful type checks.
     "strictNullChecks": true
   },
   "include": [
