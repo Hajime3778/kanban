@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path');
+
 module.exports = {
   mode: 'development',
   entry: './src/index.tsx',
@@ -11,8 +14,12 @@ module.exports = {
     host: 'localhost',
     port: 3000,
     publicPath: '/',
+    historyApiFallback: true,
   },
   resolve: {
+    alias: {
+      src: path.resolve(__dirname, '/src'),
+    },
     extensions: ['.ts', '.tsx', '.js'],
   },
   module: {

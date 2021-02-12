@@ -41,6 +41,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'import/newline-after-import': 'error',
     'import/no-default-export': 'error',
+    'react/prop-types': 0,
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
   },
 };
